@@ -2,10 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Console tamagotchi</title>
-    <script src="index.js"></script>
+    <title>HW3</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="shortcut icon" href="img/cat_icon.png">
 </head>
 <body>
 
+<div class="pet">
+    <img src="img/cat_icon.png">
+
+    <div id="condition">
+        <div id="info">
+            <span>Здоровя</span>
+            <span>Радість</span>
+            <span>Чистота </span>
+            <span>Відпочинок </span>
+            <span>Сон </span>
+        </div>
+
+        <div id="wrap-condition-value">
+            <progress class="condition-value" id="life" value="0" max="100"></progress>
+            <br>
+            <progress class="condition-value" id="mood" value="0" max="100"></progress>
+            <br>
+            <progress class="condition-value" id="cleaning" value="0" max="100"></progress>
+            <br>
+            <progress class="condition-value" id="resting" value="0" max="100"></progress>
+            <br>
+            <progress class="condition-value" id="sleeping" value="0" max="100"></progress>
+        </div>
+    </div>
+    <div id="actions">
+        <div class="action-button" id="feed">Нагодувати</div>
+        <div class="action-button" id="play">Погладить</div>
+        <div class="action-button" id="clean">Помить</div>
+        <div class="action-button" id="rest">Відпочинок</div>
+        <div class="action-button" id="sleep">Спати</div>
+        <div class="action-button" id="talk">Поговорить</div>
+    </div>
+</div>
+
+<script src="class/pet.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
